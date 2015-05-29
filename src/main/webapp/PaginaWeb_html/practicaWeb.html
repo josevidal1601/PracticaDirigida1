@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head charset="utf-8">
+	<title>PracticaDirigida</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<br>
+
+ <form class="form-inline col-md-6" name="link"> 
+ <select name="menu" class="form-control"> 
+ 	<option selected value="practicaWeb.html">Selecciona taller</option> 
+ 	<option value="reporte1.html">Taller 1</option> 
+ 	<option value="reporte2.html">Taller 2</option> 
+ 	<option value="reporte3.html">Taller 3</option> 
+ 	<option value="reporte4.html">Taller 4</option> 
+ </select> <input type="button" class="btn btn-default" onClick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" value="Buscar"> </form>
+
+<script type="text/javascript" scr="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
