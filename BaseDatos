@@ -1,0 +1,19 @@
+create table Persona(
+  nombre VARCHAR2(100),
+  apellidoPaterno VARCHAR2(100),
+  correo VARCHAR2(250),
+  idTaller NUMBER(5,0)
+);
+
+CREATE TABLE Taller(
+  nombre VARCHAR2(100),
+  idTaller NUMBER(5,0)
+);
+
+SELECT nombre, apellidoPaterno, correo
+  FROM Persona;
+
+SELECT a.nombre, a.apellidoPaterno as "APELLIDO PATERNO", a.correo, b.nombre as Taller
+from Persona a LEFT OUTER JOIN Taller b
+    ON (a.idTaller = b.idTaller)
+ORDER BY b.nombre ASC ;
